@@ -6,7 +6,7 @@ const app = express()
 const port =  process.env.PORT || 7000; 
 
 // Conecção com o banco localhost
-const connStr = "Server=https://191.252.59.59;Database=FonNetSite;User ID=site_view;Password=@Fnt2020!;";
+const connStr = "Server=https://191.252.59.59;Database=FonNetSite;User ID=site_view;Password=@Fnt2020!";
 const sql = require('mssql');
 
 sql.connect(connStr)
