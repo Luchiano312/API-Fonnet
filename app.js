@@ -8,7 +8,7 @@ const port =  process.env.PORT || 8080;
 
 // Conecção com o banco localhost
 //const connStr = "Server=localhost;Database=FONNET;User ID=sa;Password=@Fnt2019!;";
-const connStr = "Server=https://191.252.59.59;Database=FonNetSite;User ID=site_view;Password=@Fnt2020!";
+const connStr = "Data Source=191.252.59.59;Initial Catalog=FonNetSiteFonNetSite Security Info=True;User ID=site_view;Password=@Fnt2020!";
 const sql = require('mssql');
 
 sql.connect(connStr)
