@@ -1,0 +1,17 @@
+{
+  "name": "api-wordpress",
+  "version": "1.0.0",
+  "description": "api for wordpress SQL FONNET",
+  "main": "wordpress-fonnet",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mssql": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luciano Pessoa para Fonnet ",
+  "license": "ISC"
+}
