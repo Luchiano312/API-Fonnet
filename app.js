@@ -3,9 +3,11 @@ const bodyParser = require('body-parser');
 const app = express()
 
 // Gateway padrão
-const port =  process.env.PORT || 7000; 
+//const port = 7000;
+const port =  process.env.PORT || 8080; 
 
 // Conecção com o banco localhost
+//const connStr = "Server=localhost;Database=FONNET;User ID=sa;Password=@Fnt2019!;";
 const connStr = "Server=https://191.252.59.59;Database=FonNetSite;User ID=site_view;Password=@Fnt2020!";
 const sql = require('mssql');
 
