@@ -29,8 +29,8 @@ app.use('/',router);
 
 //Rota de consulta
 router.get('/api-fonnet-wordpress',(req ,res) => {
-    execSQLQuery('SELECT * FROM TB_Produtos',res);
-    //execSQLQuery("SELECT ID, COD_PROD,PARTNUMBER, DESCRICAO, TIPO, PesoLiquido, FABRICANTE,PN_COMPATIBILIDADE, Especificacoes, FAMILIA_PLATAFORMA, Foto,EstoqueMinimo, DescricaoProjEspecial, DescricaoEtiqueta, DetalhesSite, CATEGORIA FROM TB_Produtos",res);
+    //execSQLQuery("SELECT * FROM TB_Produtos",res);
+    execSQLQuery("SELECT * FROM TB_Categoria FULL OUTER JOIN TB_Produtos ON TB_Categoria.ID=TB_Produtos.ID",res);
 })
 
 // Função Query de consulta
