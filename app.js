@@ -28,9 +28,33 @@ app.use('/',router);
 
 
 //Rota de consulta
-router.get('/api-fonnet-wordpress',(req ,res) => {
-    execSQLQuery("SELECT * FROM TB_Produtos",res);
-    //execSQLQuery("SELECT * FROM TB_Categoria FULL OUTER JOIN TB_Produtos ON TB_Categoria.ID=TB_Produtos.ID",res);
+router.get('/api-fonnet-categoria',(req ,res) => {
+    execSQLQuery("SELECT * FROM TB_Categoria WHERE id=ID",res);
+
+})
+router.get('/api-fonnet-produtos',(req ,res) => {
+    execSQLQuery("SELECT * FROM TB_Produtos WHERE id=ID",res);
+
+})
+
+router.get('/api-fonnet-fabricantes',(req ,res) => {
+    execSQLQuery("SELECT * FROM TB_Fabricante WHERE id=ID",res);
+
+})
+
+router.get('/api-fonnet-produtoarquivos',(req ,res) => {
+    execSQLQuery("SELECT * FROM TB_ProdutosArquivos WHERE id=ID",res);
+
+})
+
+router.get('/api-fonnet-prodsiteitens',(req ,res) => {
+    execSQLQuery("SELECT * FROM TB_Produtos_Site_Itens WHERE id=ID",res);
+
+})
+
+router.get('/api-fonnet-prodtituloesptec',(req ,res) => {
+    execSQLQuery("SELECT * FROM TB_ProdutosTituloEspTec WHERE id=ID",res);
+
 })
 
 // Função Query de consulta
